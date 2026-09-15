@@ -61,9 +61,11 @@ button { font: inherit; }
   display:flex; align-items:center; background:var(--black);
 }
 .hero-bg-photo {
-  position:absolute; inset:0 0 0 42%;
-  background-image:url("images/burger-hero.jpeg");
-  background-size:cover; background-position:center;
+  position:absolute;
+  inset:0 0 0 42%;
+  background-image:url("wild.jpg");
+  background-size:cover;
+  background-position:center;
   opacity:.55;
 }
 .hero-overlay {
