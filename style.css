@@ -571,4 +571,8 @@ footer { background:var(--black); padding:75px 6vw 25px; }
     font-size: 18px;
   }
 }
+.how-to-heading h2 .reservation-note {
+  font-size: 30px;
+  letter-spacing: 0;
+}
 
