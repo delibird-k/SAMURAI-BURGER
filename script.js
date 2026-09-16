@@ -14,6 +14,10 @@ const mobileNav = document.querySelector(".mobile-nav");
 
 hamburger.addEventListener("click", () => {
   mobileNav.classList.toggle("open");
+
+  if (fixedReserveButton) {
+    checkFixedReserveButton();
+  }
 });
 
 document.querySelectorAll(".mobile-nav a").forEach(link => {
@@ -46,6 +50,9 @@ const reservationSection =
 const loadingScreen =
   document.querySelector('.loading-screen');
 
+const mobileNav =
+  document.querySelector('.mobile-nav');
+
 if (fixedReserveButton) {
 
   const checkFixedReserveButton = () => {
@@ -77,10 +84,11 @@ if (fixedReserveButton) {
 
     // HERO・ABOUT・RESERVATIONでは隠す
     const hide =
-      isLoading ||
-      isInSection(heroSection) ||
-      isInSection(aboutSection) ||
-      isInSection(reservationSection);
+  isLoading ||
+  (mobileNav && mobileNav.classList.contains('open')) ||
+  isInSection(heroSection) ||
+  isInSection(aboutSection) ||
+  isInSection(reservationSection);
 
     fixedReserveButton.classList.toggle(
       'is-hidden',
