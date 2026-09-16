@@ -369,9 +369,6 @@ footer { background:var(--black); padding:75px 6vw 25px; }
   font-weight: 700;
   letter-spacing: 3px;
   font-family: 'Shippori Mincho', serif;
-}
-
-.menu-price .price {
   text-decoration: underline;
   text-decoration-color: var(--red);
   text-decoration-thickness: 2px;
