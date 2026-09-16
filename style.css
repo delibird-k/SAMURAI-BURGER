@@ -296,7 +296,7 @@ footer { background:var(--black); padding:75px 6vw 25px; }
 .notice-item {
   display: grid;
   grid-template-columns: 80px 1fr;
-  gap: 30px;
+  gap: 20px;
   padding: 30px 0;
   border-bottom: 1px solid rgba(238,231,216,.16);
 }
