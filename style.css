@@ -529,3 +529,37 @@ footer { background:var(--black); padding:75px 6vw 25px; }
   display: block;
   margin: 0 auto;
 }
+/* スマホ固定予約ボタン */
+.mobile-fixed-reserve {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-fixed-reserve {
+    display: flex;
+    position: fixed;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: var(--red);
+    color: var(--paper);
+
+    font-family: var(--serif);
+    font-size: 18px;
+    letter-spacing: 0.12em;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .mobile-fixed-reserve span {
+    font-family: var(--sans);
+    font-size: 18px;
+  }
+}
