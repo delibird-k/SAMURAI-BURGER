@@ -46,9 +46,6 @@ const reservationSection =
 const loadingScreen =
   document.querySelector('.loading-screen');
 
-const mobileNav =
-  document.querySelector('.mobile-nav');
-
 if (fixedReserveButton) {
 
   const checkFixedReserveButton = () => {
@@ -81,7 +78,6 @@ if (fixedReserveButton) {
     // HERO・ABOUT・RESERVATIONでは隠す
     const hide =
   isLoading ||
-  (mobileNav && mobileNav.classList.contains('open')) ||
   isInSection(heroSection) ||
   isInSection(aboutSection) ||
   isInSection(reservationSection);
