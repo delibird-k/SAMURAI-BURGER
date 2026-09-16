@@ -344,3 +344,130 @@ footer { background:var(--black); padding:75px 6vw 25px; }
   letter-spacing: 3px;
   font-family: 'Shippori Mincho', serif;
 }
+/* HOW TO ORDER */
+.how-to {
+  position: relative;
+  padding: 150px 10vw;
+  background: var(--paper);
+  color: var(--black);
+  overflow: hidden;
+}
+
+.how-to-inner {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.how-to-heading {
+  margin-bottom: 90px;
+}
+
+.how-to-heading p {
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.how-to-heading h2 {
+  font-family: var(--serif);
+  font-size: clamp(60px, 8vw, 110px);
+  line-height: .85;
+  letter-spacing: -3px;
+}
+
+.order-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.order-step {
+  position: relative;
+  padding: 0 35px;
+  border-left: 1px solid rgba(0,0,0,.25);
+}
+
+.order-step:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.step-number {
+  font-family: var(--serif);
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 35px;
+}
+
+.step-content p {
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  opacity: .55;
+}
+
+.step-content h3 {
+  font-family: var(--serif);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.step-content span {
+  font-size: 15px;
+  line-height: 2;
+  opacity: .75;
+}
+
+/* スマホ */
+@media (max-width: 800px) {
+  .how-to {
+    padding: 100px 20px;
+  }
+
+  .how-to-heading {
+    margin-bottom: 60px;
+  }
+
+  .order-steps {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .order-step,
+  .order-step:first-child {
+    padding: 30px 0 30px 35px;
+    border-left: 1px solid rgba(0,0,0,.25);
+  }
+
+  .order-step::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 35px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--black);
+  }
+
+  .step-number {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .step-content h3 {
+    font-size: 27px;
+  }
+
+  .schedule-time {
+    display: block;
+  }
+
+  .schedule-time strong {
+    display: block;
+    margin-top: 8px;
+    font-size: 25px;
+  }
+}
