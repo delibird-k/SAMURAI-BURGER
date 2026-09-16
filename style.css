@@ -497,3 +497,15 @@ footer { background:var(--black); padding:75px 6vw 25px; }
     font-size: 25px;
   }
 }
+.order-info {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+}
+
+.order-info p {
+  margin: 4px 0;
+}
