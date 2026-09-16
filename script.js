@@ -14,10 +14,6 @@ const mobileNav = document.querySelector(".mobile-nav");
 
 hamburger.addEventListener("click", () => {
   mobileNav.classList.toggle("open");
-
-  if (fixedReserveButton) {
-    checkFixedReserveButton();
-  }
 });
 
 document.querySelectorAll(".mobile-nav a").forEach(link => {
