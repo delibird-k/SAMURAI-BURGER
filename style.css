@@ -335,4 +335,11 @@ footer { background:var(--black); padding:75px 6vw 25px; }
     font-size: 20px;
     line-height: 2;
   }
+
+  .menu-price {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
 }
