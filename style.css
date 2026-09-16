@@ -369,9 +369,12 @@ footer { background:var(--black); padding:75px 6vw 25px; }
   font-weight: 700;
   letter-spacing: 3px;
   font-family: 'Shippori Mincho', serif;
+}
 
+.menu-price span {
   text-decoration: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 2px;
   text-underline-offset: 8px;
 }
 /* HOW TO ORDER */
