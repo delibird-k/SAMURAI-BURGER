@@ -308,7 +308,7 @@ footer { background:var(--black); padding:75px 6vw 25px; }
 }
 
 .notice-item p {
-  font-size: 12px;
+  font-size: 20px;
   line-height: 2;
   opacity: .7;
 }
