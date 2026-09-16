@@ -327,12 +327,12 @@ footer { background:var(--black); padding:75px 6vw 25px; }
 
   .notice-item {
     grid-template-columns: 45px 1fr;
-    gap: 15px;
+    gap: 20px;
     padding: 25px 0;
   }
 
   .notice-item p {
-    font-size: 11px;
+    font-size: 15px;
     line-height: 2;
   }
 }
