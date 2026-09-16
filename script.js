@@ -42,21 +42,28 @@ const aboutSection =
 
 const reservationSection =
   document.querySelector('#reservation');
-const loadingScreen = document.querySelector('.loading-screen');
 
+const loadingScreen =
+  document.querySelector('.loading-screen');
 
 if (fixedReserveButton) {
-  const checkFixedReserveButton = () => {
-    // PCでは何もしない
-    if (window.innerWidth > 600) return;
 
-    const scrollY = window.scrollY;
+  const checkFixedReserveButton = () => {
+
+    // PCでは非表示
+    if (window.innerWidth > 600) {
+      fixedReserveButton.classList.add('is-hidden');
+      return;
+    }
+
     const screenHeight = window.innerHeight;
 
+    // ローディング中かどうか
     const isLoading =
-  loadingScreen &&
-  !loadingScreen.classList.contains('hide');
+      loadingScreen &&
+      !loadingScreen.classList.contains('hide');
 
+    // 指定したセクションが画面内にあるか
     const isInSection = (section) => {
       if (!section) return false;
 
@@ -68,17 +75,29 @@ if (fixedReserveButton) {
       );
     };
 
+    // HERO・ABOUT・RESERVATIONでは隠す
     const hide =
-       isLoading ||
-  isInSection(heroSection) ||
-  isInSection(aboutSection) ||
-  isInSection(reservationSection);
+      isLoading ||
+      isInSection(heroSection) ||
+      isInSection(aboutSection) ||
+      isInSection(reservationSection);
 
-    fixedReserveButton.classList.toggle('is-hidden', hideButton);
+    fixedReserveButton.classList.toggle(
+      'is-hidden',
+      hide
+    );
   };
 
-  window.addEventListener('scroll', checkFixedReserveButton);
-  window.addEventListener('resize', checkFixedReserveButton);
+  window.addEventListener(
+    'scroll',
+    checkFixedReserveButton,
+    { passive: true }
+  );
+
+  window.addEventListener(
+    'resize',
+    checkFixedReserveButton
+  );
 
   checkFixedReserveButton();
 }
