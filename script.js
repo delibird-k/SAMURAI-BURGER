@@ -45,8 +45,8 @@ if (fixedReserveButton) {
     const screenHeight = window.innerHeight;
 
     const isLoading =
-      loadingScreen &&
-      getComputedStyle(loadingScreen).display !== 'none';
+  loadingScreen &&
+  !loadingScreen.classList.contains('hide');
 
     const isInSection = (section) => {
       if (!section) return false;
