@@ -524,3 +524,8 @@ footer { background:var(--black); padding:75px 6vw 25px; }
 .order-info p {
   margin: 4px 0;
 }
+.access-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
