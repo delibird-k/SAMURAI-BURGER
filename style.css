@@ -149,7 +149,12 @@ button { font: inherit; }
 .schedule { position:relative; padding:160px 10vw; background:var(--black); overflow:hidden; }
 .schedule-head { max-width:1200px; margin:auto; }
 .schedule-head h2 { font-size:clamp(110px,18vw,260px); line-height:.7; letter-spacing:-12px; opacity:.9; margin-top:15px; }
-.dates { max-width:1200px; margin:100px auto 0; display:grid; grid-template-columns:1fr 1fr; }
+.dates {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .dates article { padding:45px 35px; border-top:1px solid rgba(238,231,216,.16); }
 .dates article + article { border-left:1px solid rgba(238,231,216,.16); }
 .dates span { color:var(--red); font-size:9px; letter-spacing:3px; }
