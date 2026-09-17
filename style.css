@@ -9,8 +9,8 @@
   --red2: #741319;
   --ink: #171411;
   --muted: #8e887d;
-  --serif: "Shippori Mincho", serif;
-  --sans: "Noto Sans JP", sans-serif;
+  --sans: 'Shippori Mincho', serif;
+--serif: 'Shippori Mincho', serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
