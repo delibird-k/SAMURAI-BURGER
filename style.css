@@ -575,4 +575,93 @@ footer { background:var(--black); padding:75px 6vw 25px; }
   font-size: 30px;
   letter-spacing: 0;
 }
+/* =========================
+   VOTE
+========================= */
 
+.vote {
+  padding: 100px 20px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: center;
+}
+
+.vote-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vote .section-label {
+  margin-bottom: 15px;
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.25em;
+}
+
+.vote h2 {
+  margin: 0 0 25px;
+  font-family: var(--serif);
+  font-size: 42px;
+  letter-spacing: 0.12em;
+}
+
+.vote p {
+  margin: 0 0 35px;
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+}
+
+.vote-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-width: 220px;
+  height: 60px;
+  padding: 0 30px;
+
+  background: var(--red);
+  color: var(--paper);
+
+  font-family: var(--serif);
+  font-size: 18px;
+  letter-spacing: 0.12em;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.vote-button:hover {
+  transform: translateY(-3px);
+  background: var(--red2);
+}
+
+.vote-button span {
+  font-family: var(--sans);
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .vote {
+    padding: 80px 20px;
+  }
+
+  .vote h2 {
+    font-size: 32px;
+  }
+
+  .vote p {
+    font-size: 14px;
+  }
+
+  .vote-button {
+    width: 100%;
+    max-width: 320px;
+  }
+}
