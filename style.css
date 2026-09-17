@@ -151,7 +151,7 @@ button { font: inherit; }
 .schedule-head h2 { font-size:clamp(110px,18vw,260px); line-height:.7; letter-spacing:-12px; opacity:.9; margin-top:15px; }
 .dates {
   max-width: 1200px;
-  margin: 30px auto 0;
+  margin: 20px auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
